@@ -26,7 +26,7 @@ def get_data(ticker):
     df = web.DataReader(ticker,'yahoo',start_date,end_date) #type=pandas DataFrame
     return df
 #stock data
-stock = get_data('tqqq') #Input stock ticker here
+stock = get_data('') #Input stock ticker here
 stock.Close.plot()
 
 #smoothing of data using forward-backward pass EMA 
